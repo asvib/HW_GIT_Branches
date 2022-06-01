@@ -1,0 +1,10 @@
+Bug Name": "New name",
+Severity:High, Low, Medium
+Priority": High, Low, Medium
+Reported by: "Name"
+Reported on: "Date"
+Status: New, Open, Active
+Enviroment: Windows 10
+Description: Aplication crashes,
+Steps to Reproduce: Steps to reproduce
+Expected Result: Expected result
