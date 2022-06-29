@@ -42,3 +42,29 @@ function printSmile(stroka, numberOfRows){
         console.log(d, count)
     }};
 printSmile('name', 6)
+
+
+//3**.  Написать функцию, которая принимает на вход слово. Задача функции посчитать и вывести в консоль, сколько в слове гласных, и сколько согласных букв.
+//e.g. function getWordStructure(word)
+//В консоли: 
+//Слово (word) состоит из  (число) гласных и (число) согласных букв
+
+//Проверки: 'case', 'Case', 'Check-list'
+
+function getWordStructure(word){
+    let func_word = word.replace(/[^a-z]/gi, '');
+    const check1 = ['a', 'e', 'i', 'o', 'u','y'];
+    let count = 0;
+    let count1= 0
+    for(let sigh of func_word.toLowerCase()){
+        if(check1.includes(sigh)){
+            count+=1
+            count1 = +func_word.length - count
+        }
+    }
+    console.log('Слово ', word, 'состоит из ', count, ' ', 'гласных', 'и ', count1, ' ', 'согласных');
+};
+getWordStructure('Check-list');
+getWordStructure('case');
+getWordStructure('Case');
+
